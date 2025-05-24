@@ -1,0 +1,111 @@
+/* Import Google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #bae6fd 0%, #818cf8 100%);
+  color: #1f2937; /* gray-800 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #111827 0%, #1e293b 100%);
+  color: #f9fafb; /* gray-50 */
+}
+
+.container {
+  min-height: 100vh;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Button */
+.btn {
+  background-color: #4f46e5; /* Indigo */
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.dark {
+  background-color: #fbbf24; /* Yellow */
+  color: black;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Card */
+.card {
+  background: rgba(255 255 255 / 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.dark .card {
+  background: rgba(255 255 255 / 0.1);
+  box-shadow: 0 8px 24px rgb(255 255 255 / 0.1);
+}
+
+/* Headings inside cards */
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Lists */
+ul {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Pie Chart container */
+.chart-container {
+  height: 300px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* To-Do List and Announcements */
+.todo-list li, .announcements p {
+  margin-bottom: 0.5rem;
+}
